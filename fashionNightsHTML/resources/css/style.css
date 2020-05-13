@@ -1,0 +1,345 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP 
+/*image <div class="bg"> <img src="resources/img/hero.jpg"> </div> */
+
+/*color  #bdc3c7                                       */ 
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+header {
+    background-color: #555;
+    padding: 1%;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+/* ----- HEADINGS ----- */
+h1,
+h2
+ {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+/* HEADER */
+
+  /*nav*/
+  .number {
+    font-size: 200%;
+    position: relative;
+    bottom: 55px;
+}
+
+.logo{
+    width: 7%;
+    height: 7%;
+    border-radius: 50px; 
+    float: left;
+    margin: 0 3px 0 0;
+    position: relative;
+    
+}
+
+ 
+  .instagram{
+      font-size: 150%;
+      color: #fff;
+      float: left;
+      position: relative;
+      top: 23px;
+      margin: 0 3px 0 3px;
+     
+  }
+  
+  
+  .call {
+      color: #fff;
+      float: right;
+      position: relative;
+      bottom: 45px;
+      margin: 0 10px 0 10px;
+      font-size: 150%;
+  }
+  .number {
+      color: #fff;
+      float: right;
+  }
+
+  .bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    
+  }
+  .bg img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  .name {
+      display: inline-block;
+      position: relative;
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-top: 45px;
+      text-align: center;
+      border-bottom: 2px solid #bdc3c7;
+      padding-bottom: 1%;    
+      
+    }
+
+    .bg img {
+        filter: brightness(30%);
+    }
+
+
+     .categorie-h-1:link,
+     .categorie-h-2:link,
+     .categorie-h-1:visited,
+     .categorie-h-2:visited {
+        display: inline-block;
+        font-size: 120%;
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+        width: 70%;
+        position: relative;
+        text-transform: uppercase;
+        padding-bottom: 1px;
+        border-bottom: 1px solid transparent;
+        font-weight: 120%;
+        transition: border-bottom 0.2s, color 0.2s, font-weight 0.2s;
+        
+        
+    }
+     .categorie-h-1:hover,
+     .categorie-h-2:hover,
+     .categorie-h-1:active,
+     .categorie-h-2:active{
+    color:  #bdc3c7;
+    font-weight: 140%;
+    border-bottom: 1px solid  #bdc3c7;
+}
+
+    .categorie-h-1 {
+        margin-left: 15%;
+       
+        margin-right: 15%;
+        
+        
+
+    }
+
+    .categorie-h-2 {
+        margin-right: 15%;
+        
+        margin-left: 15%;
+       
+        
+
+    }
+
+    .img-container {
+        width: 30%;
+        display: inline-block;
+        
+    }
+    
+   
+
+    /*/ SECTION PRODUCTS /*/
+
+    
+    
+    .product-showcase {
+        list-style: none;
+        width: 80%;
+        margin: 60px 10% 35px 10%;
+    }
+    
+    .product-showcase li {
+        padding: 0%;
+        display: block;
+        float: left;
+        width: 23%;
+        margin-left: 1%;
+        margin-right: 1%;
+        border: 1px solid  #bdc3c7;
+       
+    }
+
+  
+    
+    .product-photo {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+        
+    }
+    
+    .product-photo img {
+        opacity: 1;
+        width: 100%;
+        height: 320px;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+        transition: transform 0.5s, opacity 0.5s;
+       
+    }
+    
+    .product-photo img:hover {
+       
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+
+    .name-product {
+        font-size: 85%;
+        border-top: 1px solid #bdc3c7;
+        border-bottom: 1px solid #bdc3c7;
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding: 2%;
+        color: #fff;
+        position: relative;
+    }
+
+    .price-product {
+       /* float: right;*/
+        padding-bottom: 1px;
+        margin-bottom: 1px;
+        text-align: center;
+        padding: 2%;
+        color: #fff;
+        position: relative;
+    }
+
+    .delivery-customs  {
+        
+        border-bottom: solid 1px #fff;
+        
+        
+        
+    }
+
+    .item-name-1,
+    .item-name-2,
+    .item-name-3,
+    .item-name-4{
+
+        color: #fff;
+        position: relative;
+        font-size: 115%;
+        text-transform: uppercase;
+        text-decoration: none;
+      
+        
+        
+    }
+
+    /*/ FOOTER /*/ 
+
+    footer {
+         border-top: solid 2px #fff;
+         position: relative;
+
+    }  
+
+    .logo1{
+        width: 3.5%;
+        height: 3.5%;
+        border-radius: 50px; 
+        float: left;
+        margin: 0 3px 0 0;
+        position: relative;
+        top: 15px;
+
+        
+    }
+
+
+
+
+
